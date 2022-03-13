@@ -39,7 +39,8 @@ header:before{
 
 @media (max-width: 800px) {
     header{
-        display: inline;
+        position: static;
+        display: inline-block;
         padding-top: 40px;
         padding-bottom: 16px;
     }
@@ -142,15 +143,16 @@ nav li>a:hover{
 
 .banner img{
     max-width: 100%;
-    height: auto;
     z-index: -1;
 }
+
 
 .banner{
     display: flex;
     justify-content: center;
     position: relative;
-    width: auto;
+    
+
 }
 
 .call-to-action{
@@ -159,9 +161,9 @@ nav li>a:hover{
     text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
     .call-to-action{
-        bottom: 6%;
+        bottom: 10%;
     }
 
     nav li{
@@ -169,11 +171,6 @@ nav li>a:hover{
     }
 }
 
-@media (max-width: 600px) {
-    .call-to-action{
-        bottom: 10%;
-    }
-}
 
 .call-to-action p{
     font-size: 48px;
@@ -182,10 +179,17 @@ nav li>a:hover{
     margin-bottom: 64px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .call-to-action p{
         font-size: 24px;
         margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .call-to-action p{
+        font-size: 24px;
+        margin-bottom: 16px;
     }
 }
 
@@ -201,7 +205,7 @@ nav li>a:hover{
     transition-duration: 500ms;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .call-to-action a{
         font-size: 12px;
         padding: 12px;
