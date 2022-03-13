@@ -6,21 +6,25 @@
 --hasgrey: hsl(204, 14%, 93%);
 }
 
-*{
+/* *{
     box-sizing: border-box;   
-}
+} */
 
 body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header styles */
+
 header{
     position: fixed;
+    z-index: 10;
+    background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 24px 0px 0px 24px;
 }
 
 h1{
@@ -78,4 +82,44 @@ nav li>a:hover{
 
 .md-48{
    font-size: 48px;
+}
+
+/* Banner styles */
+
+.banner img{
+    width: 100%;
+    z-index: -1;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.call-to-action{
+    position: absolute;
+    bottom: 25%;
+    text-align: center;
+}
+
+.call-to-action p{
+    font-size: 48px;
+    color: white;
+    margin-bottom: 64px;
+}
+
+.call-to-action a{
+    text-decoration: none;
+    font-weight: bold;
+    height: auto;
+    font-size: 24px;
+    color: var(--hasblue);
+    padding: 24px;
+    background-color: var(--hasgrey);
+    border-radius: 16px;
+}
+
+.call-to-action a:hover{
+    background-color: hsl(204, 14%, 83%);
 }
