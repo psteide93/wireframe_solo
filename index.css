@@ -37,6 +37,15 @@ header:before{
     height:24px;
 }
 
+@media (max-width: 800px) {
+    header{
+        display: inline;
+        padding-top: 40px;
+        padding-bottom: 16px;
+    }
+    
+}
+
 h1{
     font-size: 36px;
     font-weight: bold;
@@ -48,15 +57,35 @@ nav > ul{
     justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+    nav > ul{
+        display: inline;
+    }
+}
+
 nav li + li{
     margin-left: 34px;
 }
+
+@media (max-width: 800px) {
+    nav li + li{
+        margin: 0;
+    }
+
+    nav li{
+        padding: 6px;
+    }
+}
+
 
 nav li>a{
     text-decoration: none;
     color: black;  
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
 }
+
 
 nav li>a:hover{
     color: var(--haslghtblue);
@@ -94,10 +123,26 @@ nav li>a:hover{
    font-size: 48px;
 }
 
+@media (max-width: 800px) {
+    .material-icons-outlined{
+        display: none;
+       
+    }
+
+    #register a::before{
+        content: "Register now"
+    }
+
+    #login a::before{
+        content: "Log in"
+    }    
+}
+
 /* Banner styles */
 
 .banner img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     z-index: -1;
 }
 
@@ -105,6 +150,7 @@ nav li>a:hover{
     display: flex;
     justify-content: center;
     position: relative;
+    width: auto;
 }
 
 .call-to-action{
@@ -113,11 +159,34 @@ nav li>a:hover{
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    .call-to-action{
+        bottom: 6%;
+    }
+
+    nav li{
+        padding: 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .call-to-action{
+        bottom: 10%;
+    }
+}
+
 .call-to-action p{
     font-size: 48px;
     text-transform: uppercase;
     color: white;
     margin-bottom: 64px;
+}
+
+@media (max-width: 600px) {
+    .call-to-action p{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
 }
 
 .call-to-action a{
@@ -131,6 +200,14 @@ nav li>a:hover{
     border-radius: 16px;
     transition-duration: 500ms;
 }
+
+@media (max-width: 600px) {
+    .call-to-action a{
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+
 
 .call-to-action a:hover{
     background-color: var(--hasblue);
@@ -163,6 +240,14 @@ h2{
     font-size: 40px;
     padding-top: 48px;
 }
+
+@media (max-width: 600px) {
+    h2{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+}
+
 
 h3{
     color: var(--hasgrey);
@@ -205,3 +290,8 @@ main a{
     border-radius: 16px;
     margin-top: 16px;
 }
+
+main a:hover{
+    background-color: hsl(204, 14%, 83%);
+}
+
