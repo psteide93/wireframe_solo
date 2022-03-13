@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+--hasblue: hsl(209, 100%, 36%);
+--haslghtblue: hsl(203, 100%, 48%);
+--hasgrey: hsl(204, 14%, 93%);
+}
+
 *{
     box-sizing: border-box;   
 }
@@ -14,17 +20,51 @@ header{
     padding: 24px;
 }
 
-nav > ul, .signup > ul{
-display: flex;
-justify-content: space-between;
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--hasblue);
 }
 
-li + li{
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li + li{
     margin-left: 16px;
 }
 
-li>a{
+nav li>a{
     text-decoration: none;
-    font-family: gi
-    ;
+    color: black;  
+    text-transform: uppercase;
+}
+
+nav li>a:hover{
+    color: var(--haslghtblue);
+}
+
+.signup > ul{
+    display: flex;
+}
+
+.signup li{
+    padding: 12px;
+}
+
+.signup a{
+    color: white;
+}
+
+#login{
+  background-color: var(--hasblue);  
+}
+
+#register{
+    background-color: var(--haslghtblue);  
+  }
+
+.md-48{
+   font-size: 48px;
 }
