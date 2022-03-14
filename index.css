@@ -65,7 +65,7 @@ nav > ul{
 }
 
 nav li + li{
-    margin-left: 34px;
+    margin-left: 36px;
 }
 
 @media (max-width: 800px) {
@@ -79,7 +79,7 @@ nav li + li{
 }
 
 
-nav li>a{
+nav li > a{
     text-decoration: none;
     color: black;  
     text-transform: uppercase;
@@ -88,7 +88,7 @@ nav li>a{
 }
 
 
-nav li>a:hover{
+nav li > a:hover{
     color: var(--haslghtblue);
 }
 
@@ -126,8 +126,7 @@ nav li>a:hover{
 
 @media (max-width: 800px) {
     .material-icons-outlined{
-        display: none;
-       
+        display: none;      
     }
 
     #register a::before{
@@ -148,7 +147,6 @@ nav li>a:hover{
     left: 0;
     right: 0;
     background-color: hsla(209, 100%, 36%, .6);
-
 }
 
 .banner img{
@@ -161,8 +159,6 @@ nav li>a:hover{
     display: flex;
     justify-content: center;
     position: relative;
-    
-
 }
 
 .call-to-action{
