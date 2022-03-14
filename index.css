@@ -109,7 +109,7 @@ nav li>a:hover{
 }
 
 #login a:hover::before{
-    content: "Log in!"
+    content: "Log in"
 }
 
 #register{
@@ -117,7 +117,7 @@ nav li>a:hover{
   }
 
 #register a:hover::before{
-    content: "Register now!"
+    content: "Register now"
 }
 
 .md-48{
@@ -131,15 +131,25 @@ nav li>a:hover{
     }
 
     #register a::before{
-        content: "Register now"
+        content: "Register now";
     }
 
     #login a::before{
-        content: "Log in"
+        content: "Log in";
     }    
 }
 
 /* Banner styles */
+
+.color-wash{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: hsla(209, 100%, 36%, .6);
+
+}
 
 .banner img{
     max-width: 100%;
